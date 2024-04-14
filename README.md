@@ -1,7 +1,7 @@
 # code-challenge-2
 phase 1 project
 
-#### Date, 2024/04/30
+#### Date, 2024/04/12
 
 #### By *kish mwangi*
 
@@ -32,7 +32,7 @@ Github
 Javascript
 
 ## Support and contact details
-github.com/kish-mwangi
+github.com/kish-Mwangi
 
 ### License
 The content of this site is licensed under the MIT license
