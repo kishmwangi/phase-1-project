@@ -22,17 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
         productList.appendChild(productCard);
       });
     }
-  
- // Create product card HTML
+// Create product card HTML
 function createProductCard(product) {
   const card = document.createElement('div');
   card.classList.add('product');
 
   const imgWrapper = document.createElement('div');
   imgWrapper.classList.add('img-wrapper');
-  const img = document.createElement('img'); // Create img element
-  img.setAttribute('src', product.image); // Set src attribute to product image URL
-  img.setAttribute('alt', product.title); // Set alt attribute to product title
+  const img = document.createElement('img'); 
+
+  // Ensure the image URL is absolute
+  const imageUrl = new URL(product.image, 'https://api.escuelajs.co/api/v1/products').href;
+  img.setAttribute('src', imageUrl);
+  img.setAttribute('alt', product.title); 
+
   imgWrapper.appendChild(img);
   card.appendChild(imgWrapper);
 
@@ -45,8 +48,8 @@ function createProductCard(product) {
   card.appendChild(price);
 
   const inventory = document.createElement('p');
-  inventory.textContent = `Inventory: ${product.inventory}`;
-  card.appendChild(inventory);
+inventory.textContent = `Inventory: ${product.inventory}`;
+card.appendChild(inventory);
 
   const addToCartBtn = document.createElement('button');
   addToCartBtn.textContent = 'Add to Cart';
