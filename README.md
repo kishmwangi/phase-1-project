@@ -6,7 +6,7 @@ phase 1 project
 #### By *kish mwangi*
 
 ## Description
-This is an ecormmerce website 
+This is a online store where you add products to the cart and search for products
 
 ## Project Setup
 Simply clone the repository and run the JavaScript files in a Node.js environment.
