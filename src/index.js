@@ -61,8 +61,9 @@ card.appendChild(inventory);
 }
     // Add product to cart
     function addToCart(product) {
-      // Implement your cart logic here
+      // Implement cart logic here
       console.log('Product added to cart:', product);
+      alert('Product added to cart: ' + product.title);
     }
   
     // Search products
