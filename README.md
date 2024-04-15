@@ -6,7 +6,7 @@ phase 1 project
 #### By *kish mwangi*
 
 ## Description
-This is a online store where you add products to the cart and search for products
+This is an online store where users can browse products, add them to the cart, and search for products.
 
 ## Project Setup
 Simply clone the repository and run the JavaScript files in a Node.js environment.
